@@ -76,7 +76,7 @@ public partial class MidiRepository
     {
         XIVMIDI.XIVMIDI.Instance.AddToQueue(new XIVMIDI.IO.GetRequest()
         {
-            Url = Uri.EscapeUriString(filename),
+            Url = filename,
             Host = new Uri(filename).Host,
             Accept = "audio/midi",
             Requester = XIVMIDI.IO.Requester.DOWNLOAD
